@@ -193,6 +193,9 @@
         <label>Create Subscribed Product</label>
         <locationX>578</locationX>
         <locationY>1622</locationY>
+        <connector>
+            <targetReference>scrSuccess</targetReference>
+        </connector>
         <faultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>scrDMLFault</targetReference>
@@ -675,6 +678,23 @@
             <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(208, 0, 0);&quot;&gt;Subscription for {!lkupProduct.recordName} already exists&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>scrSuccess</name>
+        <label>Success Screen</label>
+        <locationX>578</locationX>
+        <locationY>1730</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>lblSuccess</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(7, 173, 28); font-size: 14px;&quot;&gt;Subscription created successfully&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Close</nextOrFinishButtonLabel>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
