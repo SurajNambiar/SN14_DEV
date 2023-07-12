@@ -64,3 +64,6 @@ QuickActions
 
 FlexiPages
 * Home_Page_Default1
+
+#### Pending Tasks
+* UI only work on Account & Homepage at the moment. I haven't configured it for Products
