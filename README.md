@@ -10,7 +10,7 @@
 * Assign page layouts to the required profiles
 
 
-## Metadata Changes
+### Metadata Changes
 Flows
 * Partner_Staging_After_Insert
 * SubscribedProduct_Before_Insert_Update
